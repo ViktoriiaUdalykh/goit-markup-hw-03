@@ -29,9 +29,49 @@ a {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+.list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* body */
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+p:last-child {
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-cotainer {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  vertical-align: middle;
+  align-items: center;
+}
 
 body {
   font-family: var(--main-font);
@@ -46,6 +86,10 @@ body {
 }
 
 /* header */
+.header-logo-flex {
+  margin-right: 93px;
+}
+
 .header-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -73,6 +117,25 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14em;
+
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-flex {
+  margin-right: 50px;
+}
+
+.contacts-list:last-child {
+  margin-right: 0%;
+}
+
+.contacts-inside-list-link-akcent:hover {
+  color: var(--accent-txt-cl);
+}
+
+.contacts-inside-list-link-akcent:focus {
+  color: var(--accent-txt-cl);
 }
 
 .contacts-Inside-list-link {
@@ -85,20 +148,40 @@ body {
   color: var(--primary-light-grey-txt);
 }
 
-.contacts-Inside-list-link:hover {
-  rgba: (255, 255, 255, 0.6);
+.ccontacts-Inside-list-link-rgb:hover {
+  color: rgba (255, 255, 255, 0.6);
 }
 
+.contacts-link-flex {
+  margin-bottom: 9px;
+}
+
+.footer-adress-list {
+  padding-bottom: 60px;
+}
 /* nav */
+
 .studio-nav-list {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   font-family: inherit;
+  display: flex;
 
   color: var(--primary-light-txt);
 }
+
+.studio-link-flex {
+  display: flex;
+  margin-right: 50px;
+}
+
+.studio-link-flex:last-child {
+  margin-right: 0%;
+}
+
 .studio-nav-list-link {
   font-weight: 500;
   font-size: 14px;
@@ -122,9 +205,15 @@ body {
 /* hero */
 button {
   color: inherit;
+  box-sizing: border-box;
 }
 .btn {
   background-color: var(--acondary-dark-bg);
+  text-align: center;
+}
+.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .btn-title {
@@ -134,6 +223,11 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-top: 200px;
+  display: flex;
+  display: block;
   color: var(--primary-dark-txt);
 }
 
@@ -144,18 +238,43 @@ button {
   font-family: inherit;
   letter-spacing: 0.06em;
   border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  padding: 10px 32px;
+  display: inline-block;
+  min-width: 200px;
+  text-align: center;
+  border: 1px solid transparent;
+  margin-bottom: 200px;
 
   color: var(--primary-dark-txt);
   background-color: var(--accent-txt-cl);
 }
 
 /* особенности */
+
+.peculiarities-list {
+  display: flex;
+  align-items: center;
+}
+
+.peculiarities-list-p {
+  padding: 94px 0px 94px 0;
+  margin-right: 30px;
+}
+
+.peculiarities-list-p :last-child {
+  margin-right: 0px;
+}
 .peculiarities-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 
   color: var(--primary-light-txt);
 }
@@ -169,21 +288,44 @@ button {
 }
 
 /* чем занимаемся */
+
 .we-doing-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
 
+  text-align: center;
+  margin-bottom: 50px;
   color: var(--primary-light-txt);
 }
 
+.we-doing-list {
+  display: flex;
+  align-items: center;
+}
+
+.we-doing-list-img {
+  margin-right: 30px;
+  margin-bottom: 94px;
+}
+
+.we-doing-list-img:last-child {
+  margin-right: 0px;
+}
 /* Наша команда */
+.team {
+  background-color: var(--primary-light-background);
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+
+  text-align: center;
+  padding-top: 94px;
+  margin-bottom: 50px;
 
   color: var(--primary-light-txt);
 }
@@ -194,7 +336,29 @@ button {
   line-height: 1.18;
   letter-spacing: 0.03em;
 
+  padding-top: 30px;
+  padding-bottom: 10px;
+
   color: var(--primary-light-txt);
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-flex {
+  text-align: center;
+  margin-right: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-dark-txt);
+}
+
+.team-flex:last-child {
+  margin-right: 0%;
 }
 
 .team-list-text {
@@ -218,6 +382,11 @@ button {
 
 .footer-adress-inside-list-adress:hover {
   color: var(--accent-txt-cl);
+}
+
+.logo {
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
 
 .footer-logo {
