@@ -414,7 +414,7 @@ button {
 /* второй лист */
 
 /* кнопки */
-.btn-text-Inside-list {
+.btn-text-Inside-list:not(last chilt) {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -423,16 +423,30 @@ button {
   color: var(--primary-light-txt);
   background-color: var(--primary-light-background);
   border: none;
-  border-radius: 0;
+  border-radius: 4px;
+
+  padding: 6px 22px;
+  margin-left: 30px;
 }
 
-button:hover {
+.btn-text-list {
+  display: flex;
+}
+
+.btn-text-list-flex {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 56px;
+  text-align: center;
+}
+
+.btn-text-Inside-list:hover {
   color: var(--primary-light-botton-txt);
   background-color: var(--accent-txt-cl);
   border: 0;
 }
 
-button:focus {
+.btn-text-Inside-list:focus {
   background-color: var(--accent-txt-cl);
   border: 0;
 }
