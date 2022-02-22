@@ -176,6 +176,8 @@ body {
 .studio-link-flex {
   display: flex;
   margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .studio-link-flex:last-child {
@@ -229,6 +231,10 @@ button {
   display: flex;
   display: block;
   color: var(--primary-dark-txt);
+}
+
+.button-span {
+  display: block;
 }
 
 .btn-button {
@@ -431,6 +437,7 @@ button {
 
 .btn-text-list {
   display: flex;
+  justify-content: center;
 }
 
 .btn-text-list-flex {
@@ -452,12 +459,33 @@ button {
 }
 
 /* заголовки */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-list-list {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.team-list-list:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.team-list-list:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+  padding-bottom: 94px;
+}
 
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  padding-top: 20px;
+  padding-bottom: 4px;
 
   color: var(--primary-light-txt);
 }
@@ -466,6 +494,8 @@ button {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+
+  padding-bottom: 20px;
 
   color: var(--primary-light-grey-txt);
 }
