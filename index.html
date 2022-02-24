@@ -28,11 +28,10 @@
   <body>
     <header class="header">
       <div class="container flex-cotainer">
-        <div class="header-logo-flex">
-          <a class="header-logo" href="into@devstudio.com"
-            >Web<span class="header-logo-studio">Studio</span></a
-          >
-        </div>
+        <a class="header-logo" href="into@devstudio.com"
+          >Web<span class="header-logo-studio">Studio</span></a
+        >
+
         <!--Контакты-->
         <nav class="studio-nav">
           <ul class="studio-nav-list">
@@ -69,17 +68,14 @@
       <!--Кнопка-->
       <section class="btn no-padding">
         <div class="container btn">
-          <h1 class="btn-title">
-            Эффективные решения
-            <span class="button-span">для вашего бизнеса</span>
-          </h1>
+          <h1 class="btn-title">Эффективные решения для вашего бизнеса</h1>
           <button class="btn-button" type="button">Заказать услугу</button>
         </div>
       </section>
       <!--Особенности-->
-      <section>
+      <section class="peculiarities">
         <h2 class="peculiarities-title" hidden>Наши особенности</h2>
-        <div class="container peculiarities">
+        <div class="container">
           <ul class="peculiarities-list">
             <!-- Внимание к деталям -->
             <li class="peculiarities-list-p">
@@ -151,7 +147,7 @@
       </section>
       <!--Наша команда-->
       <section class="team">
-        <div class="container team">
+        <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-flex">
@@ -163,8 +159,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title-name">Игорь Демьяненко</h3>
-              <p class="team-list-text" lang="en">Product Designer</p>
+              <div class="team-name-flex">
+                <h3 class="team-title-name">Игорь Демьяненко</h3>
+                <p class="team-list-text" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="team-flex">
               <!-- 2 Ольга Репина -->
@@ -175,8 +173,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title-name">Ольга Репина</h3>
-              <p class="team-list-text" lang="en">Frontend Developer</p>
+              <div class="team-name-flex">
+                <h3 class="team-title-name">Ольга Репина</h3>
+                <p class="team-list-text" lang="en">Frontend Developer</p>
+              </div>
             </li>
 
             <li class="team-flex">
@@ -188,8 +188,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title-name">Николай Тарасов</h3>
-              <p class="team-list-text" lang="en">Marketing</p>
+              <div class="team-name-flex">
+                <h3 class="team-title-name">Николай Тарасов</h3>
+                <p class="team-list-text" lang="en">Marketing</p>
+              </div>
             </li>
 
             <li class="team-flex">
@@ -201,8 +203,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title-name">Михаил Ермаков</h3>
-              <p class="team-list-text" lang="en">UI Designer</p>
+              <div class="team-name-flex">
+                <h3 class="team-title-name">Михаил Ермаков</h3>
+                <p class="team-list-text" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -210,11 +214,10 @@
     </main>
     <footer class="footer">
       <div class="container footer">
-        <div class="logo">
-          <a class="footer-logo" href="into@devstudio.com"
-            >Web<span class="logo-studio">Studio</span></a
-          >
-        </div>
+        <a class="footer-logo" href="into@devstudio.com"
+          >Web<span class="logo-studio">Studio</span></a
+        >
+
         <address>
           <ul class="footer-adress-list">
             <li class="adress contacts-link-flex">
@@ -233,7 +236,7 @@
                 >info@example.com</a
               >
             </li>
-            <li>
+            <li class="contacts-link-flex">
               <a
                 class="contacts-Inside-list-link contacts-Inside-list-link-rgb"
                 href="+380991111111"
