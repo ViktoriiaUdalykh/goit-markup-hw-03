@@ -205,7 +205,10 @@ button {
 .btn {
   background-color: var(--acondary-dark-bg);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
+
 .no-padding {
   padding-top: 200px;
   padding-bottom: 200px;
