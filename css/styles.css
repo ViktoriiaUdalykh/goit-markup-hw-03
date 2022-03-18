@@ -466,7 +466,7 @@ button {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 56px;
+  padding-top: 50px;
   padding-bottom: 94px;
 }
 
