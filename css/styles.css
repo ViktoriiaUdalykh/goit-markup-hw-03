@@ -438,18 +438,17 @@ button {
   border-radius: 4px;
 
   padding: 6px 22px;
-  margin-left: 30px;
 }
 
 .btn-text-list {
   display: flex;
   justify-content: center;
+  padding-top: 94px;
 }
 
-.btn-text-list-flex {
-  display: flex;
+.btn-text-list-flex:not(last child) {
   text-align: center;
-  margin-bottom: 50px;
+  margin-left: 30px;
 }
 
 .btn-text-Inside-list:hover {
@@ -467,6 +466,8 @@ button {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 56px;
+  padding-bottom: 94px;
 }
 
 .team-list-list {
@@ -482,19 +483,13 @@ button {
   margin-bottom: 0px;
 }
 
-.portfolio {
-  padding-top: 56px;
-  padding-bottom: 94px;
-}
-
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 
-  padding-top: 20px;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 
   color: var(--primary-light-txt);
 }
@@ -503,8 +498,6 @@ button {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-
-  padding-bottom: 20px;
 
   color: var(--primary-light-grey-txt);
 }
