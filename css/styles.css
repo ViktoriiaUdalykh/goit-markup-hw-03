@@ -178,6 +178,7 @@ body {
 
 .studio-link-flex {
   margin-right: 50px;
+  color: var(--primary-light-txt);
 }
 
 .studio-link-flex:last-child {
