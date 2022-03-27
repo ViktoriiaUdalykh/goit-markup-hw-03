@@ -194,6 +194,10 @@ body {
   color: var(--primary-light-txt);
 }
 
+.studio-link-acsent {
+  color: var(--accent-txt-cl);
+}
+
 .studio-link {
   color: var(--primary-light-txt);
 }
@@ -427,7 +431,7 @@ button {
 /* второй лист */
 
 /* кнопки */
-.btn-text-Inside-list:not(last chilt) {
+.btn-text-Inside-list:not(last child) {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -444,12 +448,12 @@ button {
 .btn-text-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
-.btn-text-list-flex:not(last child) {
+.btn-text-list-flex:not(:last-child) {
   text-align: center;
-  margin-left: 30px;
+  margin-right: 8px;
 }
 
 .btn-text-Inside-list:hover {
@@ -459,6 +463,7 @@ button {
 }
 
 .btn-text-Inside-list:focus {
+  color: var(--primary-light-botton-txt);
   background-color: var(--accent-txt-cl);
   border: 0;
 }
@@ -467,8 +472,6 @@ button {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 50px;
-  padding-bottom: 94px;
 }
 
 .team-list-list {
@@ -482,6 +485,11 @@ button {
 
 .team-list-list:nth-last-child(-n + 3) {
   margin-bottom: 0px;
+}
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .portfolio-title {
