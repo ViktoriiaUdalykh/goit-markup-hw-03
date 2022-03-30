@@ -128,7 +128,7 @@ body {
   margin-right: 0;
 }
 
-.contacts-flex {
+.contacts-flex:not(:last-child) {
   margin-right: 50px;
 }
 
